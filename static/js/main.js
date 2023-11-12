@@ -171,6 +171,15 @@ const initOverlayTrigger = () => {
 }
 
 onDocumentLoaded(() => {
+	var testElement = document.querySelector(".testString");
+	document.addEventListener("click", function() {
+	  // Change the content of the element
+	  testElement.innerHTML = "This is the new content";
+	});
+
+
+
+	
 	document.body.addEventListener(
 		'mouseover',
 		() => {
